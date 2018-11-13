@@ -1,0 +1,50 @@
+Fasi per la creazione di un sondaggio:
+
+1. Impostazioni tipologia
+	1.1. Classe sondaggio
+	1.2. Utenti
+	1.3. Tipologia risposte
+	1.4. 
+	1.5. 
+2. Impostazioni funzionamento
+	2.1.
+	2.2.
+	2.3.
+	2.4.
+	2.5.
+3. Creazione dei contenuti
+	3.1. Titolo
+	3.2. 
+	3.3.
+	3.4.
+	3.5. Numero progressivo di riferimento del sondaggio
+4. Impostazioni pubblicazione
+	4.1.
+	4.2.
+	4.3.
+	4.4.
+	4.5.
+5. Pubblicazione e apertura del sondaggio
+	5.1.
+	5.2.
+	5.3.
+	5.4.
+	5.5.
+6. Archiviazione dei risultati
+	6.1. Messaggio input
+	6.2.
+	6.3.
+	6.4.
+	6.5.
+7. Produzione del sommario finale
+	7.1. Messaggio introduttivo personalizzato
+	7.2. 
+	7.3.
+	7.4.
+	7.5. Messaggio conclusivo personalizzato
+8. Chiusura del sondaggio
+	8.1.
+	8.2.
+	8.3.
+	8.4.
+	8.5.
