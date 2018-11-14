@@ -210,9 +210,9 @@ elseif ($message) {
   }
 
   $textCommand = [
-    "#tuttecagne" => "mottodelmese",
-    "Cavalieri di Rohan, salutate Re <b>MarcHellas il sottosviluppato</b>!" => "redelbruzzu",
-    "<a href=\"http://telegra.ph/Statuto-del-Bruzzu-11-27\">Leggi lo statuto</a>" => "statuto",
+    "Porco di quel Dìo" => "mottodelmese",
+    "Cavalieri di Rohan, salutate Re <b>MarcHellas</b>!" => "redelbruzzu",
+    "<a href=https://telegra.ph/Statuto-del-Bruzzu-11-14">Leggi lo statuto</a>" => "statuto",
     ];
     foreach ($textCommand as $reply => $trigger) {
       if (strpos($string,$trigger)!==false) {
