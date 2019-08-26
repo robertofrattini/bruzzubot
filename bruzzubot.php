@@ -292,7 +292,6 @@ elseif ($message) {
         ];
       $method = 'sendAudio';
       }
-    }
 
 }
 
