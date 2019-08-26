@@ -9,6 +9,7 @@ include('API.php');
 include('./src/gif.php');
 include('./src/pic.php');
 include('./src/audio.php');
+include('./src/fanpic.php');
 
 function search($needle,$haystack) {
   foreach ($haystack as $title => $fileId) {
@@ -222,6 +223,22 @@ elseif ($message) {
           'parse_mode' => "HTML",
           ];
         $method = "sendMessage";
+      }
+    }
+  $kapsisTrigger = [
+    "madre",
+    "mamma",
+    "madrina",
+    "mother",
+    ];
+    foreach ($kapsisTrigger as $picTrigger) {
+        if (strpos($string,$picTrigger)!==false) {
+          $parameters = [
+            'chat_id' => $chatId,
+            'photo' => $kapsis[rand(0,count($kapsis)-1)],
+            ];
+          $method = 'sendPhoto';
+        }
       }
     }
   $picCommand = [
