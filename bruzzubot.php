@@ -212,7 +212,7 @@ elseif ($message) {
 
   $textCommand = [
     "Porco di quel Dìo" => "mottodelmese",
-    "Cavalieri di Rohan, salutate Re <b>MarcHellas</b>!" => "redelbruzzu",
+    "Cavalieri di Rohan, salutate Re <b>Sbrumbe</b>!" => "redelbruzzu",
     "<a href=\"https://telegra.ph/Statuto-del-Bruzzu-11-14\">Leggi lo statuto</a>" => "statuto",
     ];
     foreach ($textCommand as $reply => $trigger) {
@@ -226,10 +226,7 @@ elseif ($message) {
       }
     }
   $kapsisTrigger = [
-    "madre",
-    "mamma",
     "madrina",
-    "mother",
     ];
     foreach ($kapsisTrigger as $picTrigger) {
         if (strpos($string,$picTrigger)!==false) {
