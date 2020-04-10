@@ -227,6 +227,7 @@ elseif ($message) {
     }
   $kapsisTrigger = [
     "madrina",
+    "kapsis",
     ];
     foreach ($kapsisTrigger as $picTrigger) {
         if (strpos($string,$picTrigger)!==false) {
