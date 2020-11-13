@@ -146,6 +146,7 @@ elseif ($message) {
     $replyToMessage = isset($message['reply_to_message'])?$message['reply_to_message']:'';
 
   $method = 'sendMessage';
+  $parameters = [];
 
   if ($newParticipant&&$newParticipant!=BOT_NAME) {
     $parameters = [
