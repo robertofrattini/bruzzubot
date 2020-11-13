@@ -155,11 +155,11 @@ elseif ($message) {
       ];
   }
   if ($text=="/start"||$text=="/start@".BOT_NAME||$text=="/menu"||$text=="/menu@".BOT_NAME) {
-    $keyboard=[[['text' => "Statuto del Bruzzu", 'url' => "http://telegra.ph/Statuto-del-Bruzzu-11-27"]],[['text' => "Guida comandi", 'callback_data' => "guida"]]];
+    $keyboard=[[['text' => "Statuto del Bruzzu", 'url' => "https://drive.google.com/file/d/1ScxQ_2Pns96Q8t5R4xygGVU9wQUal26F/view?usp=sharing"]],[['text' => "Sacro Registro del Bruzzu", 'url' => "https://docs.google.com/spreadsheets/d/1UT_DBIlCCJbtE_3yDjaagYIJ_i2AeJCtEjVw0ennO_o/edit?usp=sharing"]],[['text' => "Guida comandi", 'callback_data' => "guida"]]];
     $markup = ['inline_keyboard' => $keyboard];
     $parameters = [
       'chat_id' => $chatId,
-      'text' => "___________________________\n\n<b>\xF0\x9F\x8C\x80    BRUZZU MASTER    \xF0\x9F\x8C\x80</b>\n___________________________\n\n<i>- Il Bot ufficiale del Bruzzu -</i>\n\n\nConsulta il saggio Re Elrond:\n\n📜 /statuto\n👑 /redelbruzzu\n🗣 /mottodelmese\n👊 /fuoridalbruzzu\n\n/sondaggio\n/richiesta\n\n\nUn giorno il Bruzzu sarà un gruppo serio. Ma non è questo il giorno!",
+      'text' => "___________________________\n\n<b>\xF0\x9F\x8C\x80    BRUZZU MASTER    \xF0\x9F\x8C\x80</b>\n___________________________\n\n<i>- Il Bot ufficiale del Bruzzu -</i>\n\n\nConsulta il saggio Re Elrond:\n\n📜 /statuto\n📚 /registro\n👑 /redelbruzzu\n🗣 /mottodelmese\n👊 /fuoridalbruzzu\n\n/sondaggio\n/richiesta\n\n\nUn giorno il Bruzzu sarà un gruppo serio. Ma non è questo il giorno!",
       'parse_mode' => "HTML",
       'reply_markup' => $markup,
       ];
@@ -211,9 +211,10 @@ elseif ($message) {
   }
 
   $textCommand = [
-    "Porco di quel Dìo" => "mottodelmese",
-    "Cavalieri di Rohan, salutate Re <b>Sbrumbe</b>!" => "redelbruzzu",
-    "<a href=\"https://telegra.ph/Statuto-del-Bruzzu-11-14\">Leggi lo statuto</a>" => "statuto",
+    "Сквозь грозы сияло нам солнце свободы" => "mottodelmese",
+    "Cavalieri di Rohan, salutate Re <b>Inno</b>!" => "redelbruzzu",
+    "<a href=\"https://drive.google.com/file/d/1ScxQ_2Pns96Q8t5R4xygGVU9wQUal26F/view?usp=sharing\">Leggi lo statuto</a>" => "/statuto",
+    "<a href=\"https://docs.google.com/spreadsheets/d/1UT_DBIlCCJbtE_3yDjaagYIJ_i2AeJCtEjVw0ennO_o/edit?usp=sharing\">Leggi lo statuto</a>" => "/registro",
     ];
     foreach ($textCommand as $reply => $trigger) {
       if (strpos($string,$trigger)!==false) {
