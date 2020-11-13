@@ -219,6 +219,7 @@ elseif ($message) {
     ];
     foreach ($textCommand as $reply => $trigger) {
       if (strpos($string,$trigger)!==false) {
+        error_log("Found".$trigger."=>".$trigger);
         $parameters = [
           'chat_id' => $chatId,
           'text' => $reply,
