@@ -171,6 +171,20 @@ elseif ($message) {
       'text' => "Questa funzione non è ancora disponibile",
       ];
   }
+  elseif ($text=="/statuto"||$text=="/statuto@".BOT_NAME) {
+    $parameters = [
+      'chat_id' => $chatId,
+      'text' => "<a href=\"https://drive.google.com/file/d/1ScxQ_2Pns96Q8t5R4xygGVU9wQUal26F/view?usp=sharing\">Leggi lo statuto</a>",
+      'parse_mode' => "HTML",
+      ];
+  }
+  elseif ($text=="/registro"||$text=="/registro@".BOT_NAME) {
+    $parameters = [
+      'chat_id' => $chatId,
+      'text' => "<a href=\"https://docs.google.com/spreadsheets/d/1UT_DBIlCCJbtE_3yDjaagYIJ_i2AeJCtEjVw0ennO_o/edit?usp=sharing\">Consulta il Sacro Registro</a>",
+      'parse_mode' => "HTML",
+      ];
+  }
   elseif ($text=="/richiesta"||$text=="/richiesta@".BOT_NAME) {
     $forceReply = [
       'force_reply' => true,
@@ -214,8 +228,6 @@ elseif ($message) {
   $textCommand = [
     "Сквозь грозы сияло нам солнце свободы" => "mottodelmese",
     "Cavalieri di Rohan, salutate Re <b>Inno</b>!" => "redelbruzzu",
-    "<a href=\"https://drive.google.com/file/d/1ScxQ_2Pns96Q8t5R4xygGVU9wQUal26F/view?usp=sharing\">Leggi lo statuto</a>" => "/statuto",
-    "<a href=\"https://docs.google.com/spreadsheets/d/1UT_DBIlCCJbtE_3yDjaagYIJ_i2AeJCtEjVw0ennO_o/edit?usp=sharing\">Leggi lo statuto</a>" => "/registro",
     ];
     foreach ($textCommand as $reply => $trigger) {
       if (strpos($string,$trigger)!==false) {
