@@ -308,7 +308,7 @@ elseif ($message) {
       $method = 'sendAudio';
       }
   $stickerCommand = [
-    "evoco"=>["evoco"],
+    "evoco"=>[" evoco "],
   ];
     foreach ($stickerCommand as $stickerTitle => $stickerTriggerList) {
       foreach ($stickerTriggerList as $stickerTrigger) {
