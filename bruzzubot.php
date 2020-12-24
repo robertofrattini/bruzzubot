@@ -3,8 +3,8 @@
 define('BOT_TOKEN', '226626117:AAF_LAq1uNAEpQs_tDU92QysXgP65kGjJcY');
 define('API_URL', 'https://api.telegram.org/bot'.BOT_TOKEN.'/');
 define('BOT_NAME', 'bruzzubot');
-define('BRUZZU_ID', '-1001089994455');
-define('ADMIN_ID', '174497151');
+define('BRUZZU_ID', -1001089994455);
+define('ADMIN_ID', 174497151);
 
 include('API.php');
 include('./src/gif.php');
