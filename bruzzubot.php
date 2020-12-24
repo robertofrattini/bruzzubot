@@ -307,12 +307,12 @@ elseif ($message) {
       $method = 'sendAudio';
       }
 
-  if ($chatId==ADMIN_ID) {
+/*  if ($chatId==ADMIN_ID) {
     $parameters = [
       'chat_id' => ADMIN_ID,
       'text' => print_r($message),
     ];
-  }
+  }*/
 }
 
 
