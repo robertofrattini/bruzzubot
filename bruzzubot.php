@@ -271,7 +271,7 @@ elseif ($message) {
     }
   $gifCommand = [
     "Fuori dal Nonno!" => ["fuoridalnonno","fuori dal nonno"],
-    "Fuori dal Bruzzu Christmas Edition" => ["fuori dal natale","fuoridalnatale"],
+    "Fuori dal Bruzzu Christmas Edition" => ["fuori dal natale","fuoridalnatale","buon natale", "buon nasale"],
     "Ordine e metodo ragazzi!" => ["ordineemetodo","ordine e metodo"],
     "NiroSuspect" => ["sospetto"],
     "Rifaccia il corso v2" => ["ho sbagliato tutto"],
