@@ -310,7 +310,7 @@ elseif ($message) {
   if ($chatId==ADMIN_ID) {
     $parameters = [
       'chat_id' => ADMIN_ID,
-      'text' => print_r($update),
+      'text' => print_r($message),
     ];
   }
 }
