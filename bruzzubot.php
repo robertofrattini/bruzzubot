@@ -11,6 +11,7 @@ include('./src/gif.php');
 include('./src/pic.php');
 include('./src/audio.php');
 include('./src/fanpic.php');
+include('./src/sticker.php');
 
 function search($needle,$haystack) {
   foreach ($haystack as $title => $fileId) {
@@ -306,13 +307,20 @@ elseif ($message) {
         ];
       $method = 'sendAudio';
       }
-
-/*  if ($chatId==ADMIN_ID) {
-    $parameters = [
-      'chat_id' => ADMIN_ID,
-      'text' => print_r($message),
-    ];
-  }*/
+  $stickerCommand = [
+    "evoco"=>["evoco"],
+  ];
+    foreach ($stickerCommand as $stickerTitle => $stickerTriggerList) {
+      foreach ($stickerTriggerList as $stickerTrigger) {
+        if (strpos($string,$stickerTrigger)!==false) {
+          $parameters = [
+            'chat_id' => $chatId,
+            'sticker' => $sticker[$stickerTitle],
+            ];
+          $method = 'sendSticker';
+        }
+      }
+    }
 }
 
 
