@@ -270,18 +270,18 @@ elseif ($message) {
       }
     }
   $gifCommand = [
-    "Fuori dal Nonno!" => ["fuoridalnonno","fuori dal nonno"],
-    "Fuori dal Bruzzu Christmas Edition" => ["fuori dal natale","fuoridalnatale","buon natale", "buon nasale"],
-    "Ordine e metodo ragazzi!" => ["ordineemetodo","ordine e metodo"],
+    "Fuori dal Nonno!" => ["fuoridalnonno"],
+    "Fuori dal Bruzzu Christmas Edition" => ["fuoridalnatale","buonnatale", "buonnasale"],
+    "Ordine e metodo ragazzi!" => ["ordineemetodo"],
     "NiroSuspect" => ["sospetto"],
-    "Rifaccia il corso v2" => ["ho sbagliato tutto"],
-    "Dr. Galliani" => [" è perfetto "],
+    "Rifaccia il corso v2" => ["hosbagliato"],
+    "Dr. Galliani" => [" èperfetto "],
     "LugaXperiment" => [" lugarini "],
-    "Questa è benzina" => ["questaèbenzina","questa è benzina"],
+    "Questa è benzina" => ["questaèbenzina"],
     "Autogol 1" => ["autogol"],
-    "Nonsièsteso v1" => ["nonsièsteso","non si è steso"],
-    "Non si è Seveso v1" => ["nonsièseveso","non si è seveso","perso il treno"],
-    "Mii baasta" => ["non ce la faccio più"," mii ","non ne posso"],
+    "Nonsièsteso v1" => ["nonsièsteso",],
+    "Non si è Seveso v1" => ["nonsièseveso","persoiltreno"],
+    "Mii baasta" => ["noncelafacciopiù"," mii ","nonneposso"],
     "Petalòso" => ["petaloso"],
     ];
     foreach ($gifCommand as $gifTitle => $gifTriggerList) {
