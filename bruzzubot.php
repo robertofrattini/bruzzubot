@@ -229,8 +229,8 @@ elseif ($message) {
   }
 
   $textCommand = [
-    "Сквозь грозы сияло нам солнце свободы" => "mottodelmese",
-    "Cavalieri di Rohan, salutate Re <b>Inno</b>!" => "redelbruzzu",
+    "Il capo non si è ancora espresso" => "mottodelmese",
+    "Cavalieri di Rohan, salutate Re <b>Marcomandante</b>!" => "redelbruzzu",
     ];
     foreach ($textCommand as $reply => $trigger) {
       if (strpos($string,$trigger)!==false) {
@@ -271,19 +271,19 @@ elseif ($message) {
       }
     }
   $gifCommand = [
-    "Fuori dal Nonno!" => ["fuoridalnonno"],
-    "Fuori dal Bruzzu Christmas Edition" => ["fuoridalnatale","buonnatale", "buonnasale"],
-    "Ordine e metodo ragazzi!" => ["ordineemetodo"],
-    "NiroSuspect" => ["sospetto"],
-    "Rifaccia il corso v2" => ["hosbagliato"],
-    "Dr. Galliani" => [" èperfetto "],
+    "Fuori dal Nonno!" => [" fuori dal nonno "," fuoridalnonno "],
+    "Fuori dal Bruzzu Christmas Edition" => [" fuori dalnatale ", " buon nasale "],
+    "Ordine e metodo ragazzi!" => [" ordine e metodo "],
+    "NiroSuspect" => [" sospetto "],
+    "Rifaccia il corso v2" => [" ho sbagliato "],
+    "Dr. Galliani" => [" è perfetto "],
     "LugaXperiment" => [" lugarini "],
-    "Questa è benzina" => ["questaèbenzina"],
-    "Autogol 1" => ["autogol"],
-    "Nonsièsteso v1" => ["nonsièsteso",],
-    "Non si è Seveso v1" => ["nonsièseveso","persoiltreno"],
-    "Mii baasta" => ["noncelafacciopiù"," mii ","nonneposso"],
-    "Petalòso" => ["petaloso"],
+    "Questa è benzina" => [" questa è benzina "," questaèbenzina "],
+    "Autogol 1" => [" autogol "],
+    "Nonsièsteso v1" => [" nonsièsteso ",],
+    "Non si è Seveso v1" => [" nonsièseveso "," perso il treno "],
+    "Mii baasta" => ["non ce la facci opiù"," mii ","non ne posso "],
+    "Petalòso" => [" petaloso "],
     ];
     foreach ($gifCommand as $gifTitle => $gifTriggerList) {
       foreach ($gifTriggerList as $gifTrigger) {
