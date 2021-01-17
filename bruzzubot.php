@@ -276,13 +276,13 @@ elseif ($message) {
     "Ordine e metodo ragazzi!" => [" ordine e metodo "],
     "NiroSuspect" => [" sospetto "],
     "Rifaccia il corso v2" => [" ho sbagliato "],
-    "Dr. Galliani" => [" è perfetto "],
+    "Dr. Galliani" => ["   perfetto "],
     "LugaXperiment" => [" lugarini "],
-    "Questa è benzina" => [" questa è benzina "," questaèbenzina "],
+    "Questa è benzina" => [" questa   benzina "," questa benzina "],
     "Autogol 1" => [" autogol "],
-    "Nonsièsteso v1" => [" nonsièsteso ",],
-    "Non si è Seveso v1" => [" nonsièseveso "," perso il treno "],
-    "Mii baasta" => ["non ce la facci opiù"," mii ","non ne posso "],
+    "Nonsièsteso v1" => [" nonsi steso ",],
+    "Non si è Seveso v1" => [" nonsi seveso "," perso il treno "],
+    "Mii baasta" => [" non ce la faccio "," mii "," non ne posso "],
     "Petalòso" => [" petaloso "],
     ];
     foreach ($gifCommand as $gifTitle => $gifTriggerList) {
